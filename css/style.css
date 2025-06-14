@@ -1,0 +1,186 @@
+/* ================== ROOT VARIABLE ================== */
+:root {
+  --bg: #30382F;
+  --text: #FFFBDF;
+  --accent: #FFFBDF;
+  --highlight: #E6DFAE;
+  --button-hover: #cfc9a0;
+}
+
+/* ================== RESET ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  line-height: 1.7;
+}
+
+/* ================== HEADER ================== */
+header {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.4em;
+}
+
+.judul-foto{
+  margin-top: 2em;
+}
+/* ================== NAVIGATION ================== */
+.button-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.btn-file {
+  background-color: var(--accent);
+  color: var(--bg);
+  padding: 5px 10px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-file:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-2px);
+}
+
+
+.nav-btn {
+  background-color: var(--accent);
+  color: var(--bg);
+  padding: 10px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-2px);
+}
+
+/* ================== VIDEO STYLE ================== */
+video {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ================== FOTO GRID ================== */
+.foto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.foto-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.foto-grid img:hover {
+  transform: scale(1.03);
+}
+
+.foto-anggota {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.foto-anggota img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+/* ================== SECTION STYLES ================== */
+section {
+  margin-bottom: 3em;
+  padding: 1.5em;
+  background-color: #384038;
+  border-radius: 12px;
+}
+
+.cover {
+  text-align: center;
+  background-color: #2d342d;
+}
+
+.cover h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+.cover p {
+  font-size: 1.1em;
+  color: var(--highlight);
+}
+
+/* ================== TENTANG KAMI ================== */
+.tentang ul {
+  margin-top: 1em;
+  list-style: disc;
+  padding-left: 1.5em;
+}
+
+.tentang li {
+  margin-bottom: 0.5em;
+}
+
+/* ================== CONTACT ================== */
+.contact-section a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+  color: var(--highlight);
+  text-decoration: underline;
+}
+
+.contact-section ul {
+  margin-top: 1em;
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-section li {
+  margin-bottom: 0.8em;
+}
+
+/* ================== FOOTER ================== */
+footer {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 0.9em;
+  opacity: 0.7;
+}
