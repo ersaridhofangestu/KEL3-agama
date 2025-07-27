@@ -1,0 +1,288 @@
+/* ================== ROOT VARIABLE ================== */
+:root {
+  --color-base-dark: #384038;
+  --color-soft-green: #6b7d6b;
+  --color-light-sage: #aab8a3;
+  --color-off-white: #f3f3f0;
+
+  --text-primary: var(--color-off-white);
+  --text-secondary: var(--color-soft-green);
+
+  --bg-primary: var(--color-base-dark);
+  --bg-secondary: var(--color-light-sage);
+  --bg-light: var(--color-off-white);
+}
+
+/*==================== RESET ===================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  border: none;
+  border-radius: 0;
+  border: none;
+}
+
+/*=============== UTILITY ================*/
+.btn-custom-dark {
+  padding: 10px 25px;
+  border: none;
+  background-color: var(--color-soft-green);
+  border-radius: 30px !important;
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px dotted transparent;
+  transition: background-color 0.3s ease-in-out;
+  font-weight: 600;
+}
+
+.btn-custom-dark:hover,
+.btn-custom-dark:active {
+  background-color: transparent;
+  border: 2px dotted;
+  color: var(--text-secondary);
+}
+
+.btn-custom-dark>svg {
+  height: 20px;
+  width: 20px;
+}
+
+.btn-custom-light {
+  padding: 10px 25px;
+  border: none;
+  background-color: var(--bg-primary);
+  border-radius: 30px !important;
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px dotted transparent;
+  transition: background-color 0.3s ease-in-out;
+  font-weight: 600;
+}
+
+.btn-custom-light:hover,
+.btn-custom-light:active {
+  background-color: transparent;
+  border: 2px dotted;
+  color: var(--text-primary);
+}
+
+.btn-custom-light>svg {
+  height: 20px;
+  width: 20px;
+}
+
+marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-track {
+  display: flex;
+  animation: marquee-scroll 20s linear infinite;
+  width: max-content;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/*=============== NAVBAR =================*/
+
+.nav-title {
+  color: var(--color-soft-green);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-link {
+  display: flex;
+  border-radius: 50px;
+  background-color: transparent;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  transition: background-color 0.3s ease-in-out !important;
+  padding: 0.5rem 2.5rem !important;
+  color: var(--color-soft-green) !important;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-link:hover {
+  background-color: var(--color-soft-green) !important;
+  color: var(--color-off-white) !important;
+}
+
+.nav-btn-link {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-title {
+    font-size: 40px;
+  }
+
+  .nav-link {
+    font-size: 20px !important;
+  }
+}
+
+/*============= HERO ===============*/
+main {
+  overflow: hidden;
+}
+
+main>section.container-hero-section {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  min-height: 30rem;
+}
+
+main>section.container-hero-section>div.hero-section {
+  background-image: url("../assets/docs/fotbar.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+main>section.container-hero-section>div.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(56, 64, 56, 0.5);
+}
+
+main>section.container-hero-section>div.hero-section>div {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-off-white);
+  align-items: center;
+  margin: auto;
+  justify-items: center;
+  text-align: center;
+  padding: 0px 1rem;
+}
+
+main>section.container-hero-section>div.hero-section>div>small {
+  font-size: 10px;
+}
+
+main>section.container-hero-section>div.hero-section>div>h2 {
+  font-weight: bold;
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2px;
+  color: var(--text-primary);
+  filter: contrast(20) brightness(15);
+  text-shadow:
+    0 0 10px var(--color-soft-green),
+    0 0 20px var(--color-light-sage);
+}
+
+main>section.container-hero-section>div.hero-section>div>p {
+  font-size: 10px;
+}
+
+main>section.container-hero-section>div.support-section>a>img {
+  width: auto;
+  height: 70px;
+  box-shadow: black;
+}
+
+main>section.container-hero-section>div.support-section {
+  position: absolute;
+  bottom: 0;
+  background-color: transparent !important;
+}
+
+img.img-support {
+  height: 50px;
+  border-radius: 5px;
+}
+
+div.marquee {
+  justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+  main>section.container-hero-section>div.hero-section>div>small {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  main>section.container-hero-section>div.hero-section>div>h2 {
+    font-size: 100px;
+    max-width: 90rem;
+  }
+
+  main>section.container-hero-section>div.hero-section>div>p {
+    font-weight: bold;
+    font-size: 20px;
+    max-width: 70rem;
+  }
+
+  main>section.container-hero-section>div.support-section>a>img {
+    width: auto;
+    height: 70px;
+    box-shadow: black;
+  }
+
+  main>section.container-hero-section>div.support-section {
+    margin: 0 auto;
+    position: relative;
+    max-width: 53rem;
+    top: -80px;
+    background-color: white !important;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 2px 1px 10px var(--color-light-sage);
+  }
+
+  main>section.container-hero-section>div.support-section::after {
+    content: "suppory by";
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid var(--color-light-sage);
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--color-soft-green);
+  }
+
+  img.img-support {
+    height: 100px;
+    border-radius: 10px;
+  }
+}

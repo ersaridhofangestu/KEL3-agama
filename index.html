@@ -5,31 +5,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kelompok 3 | Pendidikan Kawula Muda</title>
-  <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./src/css/global.css" />
 </head>
 
 <body>
-  <header>
-    <h1>Kelompok 3</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="dokumen.html">Dokumen</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button type="button" onclick="window.location.href='https://discord.gg/Gdv8RQYPbN'">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord"
-        viewBox="0 0 16 16">
-        <path
-          d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612" />
-      </svg>
-      Discord Kami
-    </button>
-  </header>
+  <header class="container" style="padding: 0 20rem">
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid justify-content-between">
+        <a class="nav-title" href="/">Kel.3</a>
 
+        <div class="d-none d-lg-flex flex-grow-1 justify-content-center">
+          <ul class="navbar-nav flex-row gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <button type="button" class="btn-custom-dark d-none d-lg-block"
+          onclick="window.location.href='https://discord.gg/Gdv8RQYPbN'">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord"
+            viewBox="0 0 16 16">
+            <path
+              d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612" />
+          </svg>
+          Discord Kami
+        </button>
+        <button class="navbar-toggler d-lg-none" style="border-radius: none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileMenu"
+          aria-labelledby="mobileMenuLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title nav-title" id="mobileMenuLabel">
+              kel.3
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
   <main>
     <section class="container-hero-section">
       <div class="hero-section">
@@ -44,7 +79,8 @@
             depan.
           </p>
 
-          <button type="button" onclick="window.location.href='https://discord.gg/Gdv8RQYPbN'">
+          <button type="button" class="btn-custom-light mt-0 mt-md-5 scale-normal scale-md-up"
+            onclick="window.location.href='https://discord.gg/Gdv8RQYPbN'">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord"
               viewBox="0 0 16 16">
               <path
@@ -54,16 +90,26 @@
           </button>
         </div>
       </div>
-      <div class="support-section">
-        <a href="https://www.bsi.ac.id/ubsi/index.js">
-          <img src="./assets/support/kampus-digital-kreatif.png" alt="" />
-        </a>
-        <a href="https://www.bsi.ac.id/ubsi/index.js">
-          <img src="./assets/support/ubsi.png" alt="" />
-        </a>
-        <a href="https://amalmulia.id/">
-          <img src="./assets/support/amal-Mulia-Indonesia.png" alt="" />
-        </a>
+      <div class="py-5 bg-light support-section marquee-wrapper d-block d-md-none">
+        <div class="marquee d-flex marquee-track" style="gap: 40px">
+          <img src="./src/assets/support/kampus-digital-kreatif.png" class="img-support"
+            alt="kampus digital kreative" />
+          <img src="./src/assets/support/ubsi.png" class="img-support" alt="Universitas Bina Sarana Informatika" />
+          <img src="./src/assets/support/amal-Mulia-Indonesia.png" class="img-support" alt="Amal Mulia Indonesia" />
+          <img src="./src/assets/support/kampus-digital-kreatif.png" class="img-support"
+            alt="kampus digital kreative" />
+          <img src="./src/assets/support/ubsi.png" class="img-support" alt="Universitas Bina Sarana Informatika" />
+          <img src="./src/assets/support/amal-Mulia-Indonesia.png" class="img-support" alt="Amal Mulia Indonesia" />
+        </div>
+      </div>
+
+      <div class="py-5 bg-light d-none d-md-block support-section">
+        <div class="d-flex items-support" style="gap: 40px">
+          <img src="./src/assets/support/kampus-digital-kreatif.png" class="img-support"
+            alt="kampus digital kreative" />
+          <img src="./src/assets/support/ubsi.png" class="img-support" alt="Universitas Bina Sarana Informatika" />
+          <img src="./src/assets/support/amal-Mulia-Indonesia.png" class="img-support" alt="Amal Mulia Indonesia" />
+        </div>
       </div>
     </section>
 
@@ -158,6 +204,12 @@
   <footer>
     <p>&copy; 2025 Kelompok 3 | UBSI Cengkareng</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
