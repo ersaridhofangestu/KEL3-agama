@@ -103,6 +103,71 @@ marquee-wrapper {
   }
 }
 
+/* From Uiverse.io by VD232004 */
+.card {
+  width: 290px;
+  height: 290px;
+  border-radius: 20px;
+  background: #f5f5f5;
+  position: relative;
+  border: 2px solid #c3c6ce;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  overflow: hidden;
+}
+
+.card-details {
+  color: rgb(162, 0, 255);
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.card-img {
+  object-fit: cover;
+  object-position: center 50px;
+  height: 100%;
+  width: 100%;
+}
+
+.card-info {
+  text-decoration: none;
+  text-align: center;
+  -webkit-transform: translate(-50%, 125%);
+  -ms-transform: translate(-50%, 125%);
+  transform: translate(-50%, 125%);
+  width: 70%;
+  height: 5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--color-soft-green);
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.card:hover {
+  border-color: var(--color-soft-green);
+  -webkit-box-shadow: 10px 5px 18px 0 rgba(255, 255, 255, 0.877);
+  box-shadow: 10px 5px 18px 0 rgba(255, 255, 255, 0.877);
+}
+
+.card:hover .card-info {
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
 /*=============== NAVBAR =================*/
 
 .nav-title {
@@ -285,4 +350,17 @@ div.marquee {
     height: 100px;
     border-radius: 10px;
   }
+}
+
+/*============= MEMBERS ================*/
+
+.d-flex-scroll {
+  scroll-snap-type: x mandatory;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.d-flex-scroll .card {
+  scroll-snap-align: start;
+  min-width: 16rem;
 }
