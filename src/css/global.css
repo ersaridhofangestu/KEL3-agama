@@ -4,6 +4,7 @@
   --color-soft-green: #6b7d6b;
   --color-light-sage: #aab8a3;
   --color-off-white: #f3f3f0;
+  --color-base-sun: #f9ad1b;
 
   --text-primary: var(--color-off-white);
   --text-secondary: var(--color-soft-green);
@@ -300,6 +301,17 @@ div.marquee {
 }
 
 @media (min-width: 768px) {
+  main>section.container-hero-section {
+    padding: 2rem;
+    padding-top: 5rem;
+    border-radius: 3rem;
+  }
+
+  main>section.container-hero-section>div.hero-section {
+    border-radius: 3rem;
+    overflow: hidden;
+  }
+
   main>section.container-hero-section>div.hero-section>div>small {
     font-size: 20px;
     font-weight: bold;
@@ -353,7 +365,6 @@ div.marquee {
 }
 
 /*============= MEMBERS ================*/
-
 .d-flex-scroll {
   scroll-snap-type: x mandatory;
   padding-left: 1rem;
@@ -363,4 +374,37 @@ div.marquee {
 .d-flex-scroll .card {
   scroll-snap-align: start;
   min-width: 16rem;
+}
+
+main>section.container-member-section {
+  margin-top: 5rem;
+}
+
+main>section.container-member-section>h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--color-soft-green);
+}
+
+main>section.container-member-section>h3>span {
+  color: var(--color-base-sun);
+  border-left: 2px solid var(--color-light-sage);
+  padding-left: 5px;
+}
+
+@media (min-width: 760px) {
+  main>section.container-member-section {
+    margin: 13rem 2rem;
+  }
+
+  main>section.container-member-section>h3 {
+    font-size: 3.5rem;
+  }
+
+  main>section.container-member-section>h3>span {
+    color: var(--color-base-sun);
+    border-left: 2px solid var(--color-light-sage);
+    padding-left: 5px;
+  }
 }
