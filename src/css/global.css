@@ -393,7 +393,7 @@ main>section.container-member-section>h3>span {
   padding-left: 5px;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   main>section.container-member-section {
     margin: 13rem 2rem;
   }
@@ -406,5 +406,103 @@ main>section.container-member-section>h3>span {
     color: var(--color-base-sun);
     border-left: 2px solid var(--color-light-sage);
     padding-left: 5px;
+  }
+}
+
+/* ====================== MATERIAL ===================== */
+
+main>section.container-material-section>div.colom-1 {
+  margin: 5rem 0 1rem 1rem;
+}
+
+main>section.container-material-section>div.colom-1>h3 {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--color-base-dark);
+}
+
+main>section.container-material-section>div.colom-1>p {
+  font-weight: 2px;
+}
+
+main>section.container-material-section>div.colom-1>div {
+  position: relative;
+  padding-top: 2rem;
+  margin-top: 1rem;
+}
+
+main>section.container-material-section>div.colom-1>div.sponsor::after {
+  content: "sponsors";
+  position: absolute;
+  top: 0;
+  left: 40%;
+  font-weight: bold;
+}
+
+main>section.container-material-section>div.colom-1>div>img {
+  height: 50px;
+  filter: grayscale(100%);
+}
+
+main>section.container-material-section>div>img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+main>section.container-material-section>div.colom-3 {
+  margin: 1rem 1rem;
+}
+
+main>section.container-material-section>div.colom-3>p {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  main>section.container-material-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main>section.container-material-section>div {
+    margin: auto 0;
+  }
+
+  main>section.container-material-section>div.colom-1>h3 {
+    font-weight: bold;
+    font-size: 5rem;
+    color: var(--color-base-dark);
+  }
+
+  main>section.container-material-section>div.colom-1>p {
+    font-weight: 2px;
+  }
+
+  main>section.container-material-section>div.colom-1>div {
+    position: relative;
+    padding-top: 2rem;
+    margin-top: 1rem;
+  }
+
+  main>section.container-material-section>div.colom-1>div.sponsor::after {
+    content: "sponsors";
+    position: absolute;
+    top: 0;
+    left: 40%;
+    font-weight: bold;
+  }
+
+  main>section.container-material-section>div.colom-1>div>img {
+    height: 50px;
+    filter: grayscale(100%);
+  }
+
+  main>section.container-material-section>div.colom-3 {
+    margin: 2rem 1rem;
+  }
+
+  main>section.container-material-section>div>p {
+    font-weight: bold;
+    margin-bottom: 20px;
   }
 }
