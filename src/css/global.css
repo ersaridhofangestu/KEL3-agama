@@ -506,3 +506,57 @@ main>section.container-material-section>div.colom-3>p {
     margin-bottom: 20px;
   }
 }
+
+/*===================== CAPTION ===============*/
+main>section.container-caption-section {
+  margin-top: 4rem;
+  position: relative;
+}
+
+main>section.container-caption-section>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-base-dark);
+  height: 7.5rem;
+  justify-items: center;
+}
+
+main>section.container-caption-section>div>p {
+  color: var(--color-off-white);
+  width: 60%;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+main>section.container-caption-section>div>img {
+  width: 150px;
+  position: absolute;
+  bottom: -8px;
+  right: 0px;
+}
+
+@media (min-width: 786px) {
+  main>section.container-caption-section {
+    margin-top: 10rem;
+  }
+
+  main>section.container-caption-section>div {
+    height: 15.5rem;
+    padding: 3rem;
+    border-radius: 30px;
+  }
+
+  main>section.container-caption-section>div>p {
+    width: 70%;
+    margin-top: 10px;
+    font-size: 3rem;
+  }
+
+  main>section.container-caption-section>div>img {
+    width: 350px;
+    bottom: -19px;
+    right: 0px;
+  }
+}
