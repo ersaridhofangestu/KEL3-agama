@@ -29,6 +29,107 @@ button {
 }
 
 /*=============== UTILITY ================*/
+.tegline {
+  display: none;
+}
+
+@media (min-width: 786px) {
+  .tegline {
+    transform: scale(40deg);
+    color: var(--color-base-dark);
+    padding: 0 1rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tegline-title {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+}
+
+.card-container {
+  width: auto;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-container::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: var(--color-base-dark);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+@media (min-width: 786px) {
+  .card-container {
+    border-radius: 10px;
+  }
+}
+
+.card-images {
+  width: 100%;
+  height: 100%;
+}
+
+.card-images .img-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    scale 0.6s,
+    rotate 0.6s,
+    filter 1s;
+}
+
+.card-images .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  color: var(--color-off-white);
+  padding: 20px 24px;
+  line-height: 1.5;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(50px);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-images .content .heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card-images:hover .content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-images:hover .img-content {
+  scale: 2.5;
+  rotate: 30deg;
+  filter: blur(7px);
+}
+
+.card-images:hover .img-content {
+  fill: transparent;
+}
+
 .btn-custom-dark {
   padding: 10px 25px;
   border: none;
@@ -104,7 +205,6 @@ marquee-wrapper {
   }
 }
 
-/* From Uiverse.io by VD232004 */
 .card {
   width: 290px;
   height: 290px;
@@ -224,7 +324,7 @@ main>section.container-hero-section {
 }
 
 main>section.container-hero-section>div.hero-section {
-  background-image: url("../assets/docs/fotbar.jpg");
+  background-image: url("../assets/docs/fotbar-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -517,17 +617,21 @@ main>section.container-caption-section>div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--color-base-dark);
+  background-color: var(--color-soft-green);
   height: 7.5rem;
   justify-items: center;
+  padding-top: 20px;
 }
 
-main>section.container-caption-section>div>p {
+main>section.container-caption-section>div>div>small {
+  color: var(--color-off-white);
+}
+
+main>section.container-caption-section>div>div>p {
   color: var(--color-off-white);
   width: 60%;
   font-weight: bold;
-  margin-top: 10px;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 main>section.container-caption-section>div>img {
@@ -549,9 +653,13 @@ main>section.container-caption-section>div>img {
     position: relative;
   }
 
-  main>section.container-caption-section>div>p {
+  main>section.container-caption-section>div>div>small {
+    color: var(--color-off-white);
+    margin-bottom: -2rem;
+  }
+
+  main>section.container-caption-section>div>div>p {
     width: 70%;
-    margin-top: 10px;
     font-size: 3rem;
   }
 
@@ -559,5 +667,31 @@ main>section.container-caption-section>div>img {
     width: 350px;
     bottom: -19px;
     right: 0px;
+  }
+}
+
+/* ================== GALLERY =====================*/
+
+main>section.container-grallery-section>div>img {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 786px) {
+  main>section.container-grallery-section>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main>section.container-grallery-section>div>div.colom-1>img {
+    width: 100%;
+  }
+
+  main>section.container-grallery-section>div>div.colom-1>img {
+    width: 100%;
+  }
+
+  main>section.container-grallery-section>div>div.colom-3>img {
+    width: 100%;
   }
 }
