@@ -904,6 +904,10 @@ main>section.container-grallery-section>div>img {
   }
 }
 
+main>section.container-feedbeck-section {
+  margin-top: 5rem;
+}
+
 main>section.container-feedbeck-section>div>h3 {
   font-weight: bold;
   font-size: 2rem;
@@ -938,5 +942,35 @@ main>section.container-maps-section>iframe {
 @media (min-width: 786px) {
   main>section.container-maps-section>iframe {
     height: 350px;
+  }
+}
+
+section#members {
+  scroll-margin-top: 60px;
+}
+
+section#materi {
+  scroll-margin-top: 100px;
+}
+
+section#documentasion {
+  scroll-margin-top: 80px;
+}
+
+section#feedback {
+  scroll-margin-top: 100px;
+}
+
+@media (min-width: 786px) {
+  section#members {
+    scroll-margin-top: 50px;
+  }
+
+  section#documentasion {
+    scroll-margin-top: 200px;
+  }
+
+  section#feedback {
+    scroll-margin-top: 100px;
   }
 }
