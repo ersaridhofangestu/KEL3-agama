@@ -424,6 +424,13 @@
       </form>
     </section>
 
+    <section class="container-maps-section" style="margin-top: 5rem">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1589735516823!2d106.76903937550995!3d-6.242769361130211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f11e3c7775db%3A0xb48538de46075b39!2sYayasan%20Amal%20Mulia%20Indonesia!5e0!3m2!1sid!2sid!4v1754211672521!5m2!1sid!2sid"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"></script>
@@ -445,7 +452,7 @@
           const text = `Halo, saya ${firstName} ${lastName}.\nEmail: ${email}\n\nPesan:\n${message}`;
           const waURL = `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`;
 
-          window.location.href = waURL; // Lebih aman dari popup blocker
+          window.location.href = waURL;
         });
       });
     </script>

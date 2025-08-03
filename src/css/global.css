@@ -930,3 +930,13 @@ main>section.container-feedbeck-section>div>div>a {
     font-size: 3rem;
   }
 }
+
+main>section.container-maps-section>iframe {
+  width: 100%;
+}
+
+@media (min-width: 786px) {
+  main>section.container-maps-section>iframe {
+    height: 350px;
+  }
+}
