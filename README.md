@@ -35,7 +35,6 @@ Proyek ini dilengkapi dengan beberapa fitur inti yang dirancang untuk memberikan
 * **Fitur "Message sen wa" (WhatsApp)**
 
   * Tombol khusus yang membuka tautan WhatsApp dengan nomor dan pesan pra-terisi.
-  * Contoh format tautan WhatsApp: `https://wa.me/6281234567890?text=Halo%20saya%20ingin%20bertanya%20tentang%20Pendidikan%20Kawula%20Muda`.
 
 ---
 
