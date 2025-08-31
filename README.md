@@ -52,7 +52,7 @@ Proyek ini dilengkapi dengan beberapa fitur inti yang dirancang untuk memberikan
 
 Anda dapat melihat aplikasi web ini secara langsung melalui tautan berikut:
 
-➡️ ** https://kel3-agama.netlify.app **
+➡️ https://kel3-agama.netlify.app
 
 ---
 
